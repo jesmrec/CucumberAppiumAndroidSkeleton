@@ -69,22 +69,21 @@ public class AppiumManager {
     //Check https://appium.io/docs/en/writing-running-appium/caps/
     private static void setCapabilities(DesiredCapabilities capabilities){
 
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+        capabilities.setCapability("appium:platformName", "Android");
 
         capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "test");
 
         capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
 
-        capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.APPIUM);
+        capabilities.setCapability("appium:automationName", "UIAutomator2");
 
-        capabilities.setCapability("appWaitActivity",
-                "com.google.samples.apps.nowinandroid*");
+        capabilities.setCapability("appWaitActivity", "com.google.samples.apps.nowinandroid*");
 
-        capabilities.setCapability("uiautomator2ServerInstallTimeout", 60000);
+        capabilities.setCapability("appium:uiautomator2ServerInstallTimeout", 60000);
 
-        capabilities.setCapability("disableWindowAnimation", true);
+        capabilities.setCapability("appium:disableWindowAnimation", true);
 
-        capabilities.setCapability("noReset", false);
+        capabilities.setCapability("appium:noReset", false);
 
     }
 }
