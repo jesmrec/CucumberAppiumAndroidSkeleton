@@ -1,66 +1,87 @@
-https://github.com/android/nowinandroid
+# Cucumber + Appium + Android testing
 
-# Cucumber-Java Skeleton
+This is an example, how to integrate Cucumber and Appium to automate scenarios over an Android device or emulator.
 
-This is the simplest possible build script setup for Cucumber using Java.
-There is nothing fancy like a webapp or browser testing. All this does is to show
-you how to install and run Cucumber!
-
-There is a single feature file with one scenario. The scenario has three steps,
-two of them pending. See if you can make them all pass!
+Our sample app will be [Now in Android](https://github.com/android/nowinandroid), developed in Kotlin and Jetpack Compose, licensed Apache 2.0
 
 ## Get the code
 
-Git:
 
-    git clone https://github.com/cucumber/cucumber-java-skeleton.git
-    cd cucumber-java-skeleton
+	git clone https://github.com/jesmrec/CucumberAppiumAndroidSkeleton
+	cd android
 
-Subversion:
 
-    svn checkout https://github.com/cucumber/cucumber-java-skeleton/trunk cucumber-java-skeleton
-    cd cucumber-java-skeleton
+or [download a zip](https://github.com/jesmrec/CucumberAppiumAndroidSkeleton/archive/refs/heads/main.zip) file.
 
-Or [download a zip](https://github.com/cucumber/cucumber-java-skeleton/archive/main.zip) file.
+## Android SDK
 
-## Use Maven
+Be sure your machine hosts the Android SDK. It is always included in the latest version of Android Studio, but other package manager like homebrew allows to install it witout the IDE.
 
-Open a command window and run:
+## Appium
 
-    cd maven
-    ./mvnw test
+Install and run *Appium* in your machine. This sample is intended to be run with *Appium* 2.0+. If *Appium* is not installed in your machine, follow the [official Appium installation manual](https://appium.io/docs/en/2.0/quickstart/install/)
 
-This runs Cucumber features using Cucumber's JUnit Platform Engine. The `Suite`
-annotation on the `RunCucumberTest` class tells JUnit to kick off Cucumber.
+## Device
+
+Next step is attaching device or emulator to the machine in which tests are going to be run. With the device attached, the command
+
+	adb devices
+	
+should return one line with the device ID.	
 
 ## Use Gradle
 
-Open a command window and run:
+Now, we are ready to launch the testing. Type the following command to run the tests
 
-    cd gradle
-    ./gradlew test --rerun-tasks --info
+    ./gradlew clean test --info
 
-This runs Cucumber features using Cucumber's JUnit Platform Engine. The `Suite`
-annotation on the `RunCucumberTest` class tells JUnit to kick off Cucumber.
+If everything goes fine, you'll see everything green!
 
-## Overriding options
+<font color='green'>
 
-The Cucumber runtime uses configuration parameters to know what features to run,
-where the glue code lives, what plugins to use etc. When using JUnit, these
-configuration parameters are provided through the `@ConfigurationParameter`
-annotation on your test.
+      Given I open the app          # io.cucumber.StepDefinitions.I_open_the_app()
+      When I click on Headlines     # io.cucumber.StepDefinitions.I_click_on(java.lang.String)
+      Then Done button is unlocked  # io.cucumber.StepDefinitions.done_unlocked()
 
-For available parameters see: `io.cucumber.junit.platform.engine.Constants`
 
-### Run a subset of Features or Scenarios
+    Scenario Outline: Done unlocked # io/cucumber/features.feature:13
+      Given I open the app          # io.cucumber.StepDefinitions.I_open_the_app()
+      When I click on UI            # io.cucumber.StepDefinitions.I_click_on(java.lang.String)
+      Then Done button is unlocked  # io.cucumber.StepDefinitions.done_unlocked()
 
-Specify a particular scenario by *line*
 
-    @SelectClasspathResource(value = "io/cucumber/skeleton/belly.feature", line = 3)
+    Scenario Outline: Done unlocked # io/cucumber/features.feature:14
+      Given I open the app          # io.cucumber.StepDefinitions.I_open_the_app()
+      When I click on Compose       # io.cucumber.StepDefinitions.I_click_on(java.lang.String)
+      Then Done button is unlocked  # io.cucumber.StepDefinitions.done_unlocked()
 
-In case you have multiple feature files or scenarios to run against repeat the
-annotation.
 
-You can also specify what to run by *tag*:
+    Scenario: Settings displayed        # io/cucumber/features.feature:18
+      Given I open the app              # io.cucumber.StepDefinitions.I_open_the_app()
+      When I open Settings              # io.cucumber.StepDefinitions.I_click_on_settings()
+      Then I see the following sections # io.cucumber.StepDefinitions.sections_in_settings(io.cucumber.datatable.DataTable)
+        | Theme                |
+        | Dark mode preference |
+        
+    ┌───────────────────────────────────────────────────────────────────────────────────┐
+    │ Share your Cucumber Report with your team at https://reports.cucumber.io          │
+    │ Activate publishing with one of the following:                                    │
+    │                                                                                   │
+    │ src/test/resources/cucumber.properties:          cucumber.publish.enabled=true    │
+    │ src/test/resources/junit-platform.properties:    cucumber.publish.enabled=true    │
+    │ Environment variable:                            CUCUMBER_PUBLISH_ENABLED=true    │
+    │ JUnit:                                           @CucumberOptions(publish = true) │
+    │                                                                                   │
+    │ More information at https://cucumber.io/docs/cucumber/environment-variables/      │
+    │                                                                                   │
+    │ Disable this message with one of the following:                                   │
+    │                                                                                   │
+    │ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
+    │ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
+    └───────────────────────────────────────────────────────────────────────────────────┘
+   
+</font>
 
-    @IncludeTags("zucchini")
+This sample is ready to use [cucumber-reports](https://cucumber.io/docs/cucumber/reporting/?lang=java). Check documentation about the values to set in cucumber.properties file 
+
+Repository forked from https://github.com/cucumber/cucumber-java-skeleton
