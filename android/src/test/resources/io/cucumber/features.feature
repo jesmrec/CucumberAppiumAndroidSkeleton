@@ -10,8 +10,12 @@ Feature: Actions in main page
     Examples:
       | section   |
       | Headlines |
-      | UI        |
-      | Compose   |
+
+    Scenario: Search feature works
+      Given I open the app
+      When I click on lens icon
+      And I type Testing
+      Then Testing is a result of the search
 
   Rule: Settings view correct
 
@@ -20,4 +24,5 @@ Feature: Actions in main page
       When I open Settings
       Then I see the following sections
         | Theme                |
+        | Use Dynamic Color    |
         | Dark mode preference |

@@ -1,54 +1,55 @@
 package io.android;
 
+import org.openqa.selenium.WebElement;
+
 import java.util.List;
 
-import io.appium.java_client.MobileBy;
-import io.appium.java_client.MobileElement;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 
 public class CommonPage {
-    protected static AndroidDriver driver = AppiumManager.getManager().getDriver();
+    protected static AndroidDriver driver = AndroidManager.getDriver();
 
-    public CommonPage(){
+    public CommonPage() {
     }
 
-    public MobileElement findId(String id){
-        return (MobileElement) driver.findElement(MobileBy.id(id));
+    public WebElement findId(String id) {
+        return (WebElement) driver.findElement(AppiumBy.id(id));
     }
 
-    public List<MobileElement> findListId(String id){
-        return (List<MobileElement>) driver.findElements(MobileBy.id(id));
+    public List<WebElement> findListId(String id) {
+        return (List<WebElement>) driver.findElements(AppiumBy.id(id));
     }
 
-    public MobileElement findXpath(String xpath){
-        return (MobileElement) driver.findElement(MobileBy.xpath(xpath));
+    public WebElement findXpath(String xpath) {
+        return (WebElement) driver.findElement(AppiumBy.xpath(xpath));
     }
 
-    public List<MobileElement> findListXpath(String xpath){
-        return (List<MobileElement>) driver.findElements(MobileBy.xpath(xpath));
+    public List<WebElement> findListXpath(String xpath) {
+        return (List<WebElement>) driver.findElements(AppiumBy.xpath(xpath));
     }
 
-    public MobileElement findUIAutomatorText(String text){
-        return (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
+    public WebElement findUIAutomatorText(String text) {
+        return (WebElement) driver.findElement(AppiumBy.androidUIAutomator(
                 "new UiSelector().textContains(\"" + text + "\");"));
     }
 
-    public List<MobileElement> findListUIAutomatorText(String finder){
-        return (List<MobileElement>) driver.findElements(MobileBy.AndroidUIAutomator(
+    public List<WebElement> findListUIAutomatorText(String finder) {
+        return (List<WebElement>) driver.findElements(AppiumBy.androidUIAutomator(
                 "new UiSelector().textContains(\"" + finder + "\");"));
     }
 
-    public MobileElement findUIAutomatorDescription(String description){
-        return (MobileElement) driver.findElement(MobileBy.AndroidUIAutomator(
+    public WebElement findUIAutomatorDescription(String description) {
+        return (WebElement) driver.findElement(AppiumBy.androidUIAutomator(
                 "new UiSelector().description(\"" + description + "\");"));
     }
 
-    public MobileElement findAccesibility(String id){
-        return (MobileElement) driver.findElement(new MobileBy.ByAccessibilityId(id));
+    public WebElement findAccesibility(String id) {
+        return (WebElement) driver.findElement(new AppiumBy.ByAccessibilityId(id));
     }
 
-    public List<MobileElement> findListAccesibility(String id){
-        return (List<MobileElement>) driver.findElements(new MobileBy.ByAccessibilityId(id));
+    public List<WebElement> findListAccesibility(String id) {
+        return (List<WebElement>) driver.findElements(new AppiumBy.ByAccessibilityId(id));
     }
 
 }

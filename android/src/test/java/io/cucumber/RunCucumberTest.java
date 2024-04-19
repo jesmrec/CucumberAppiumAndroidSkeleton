@@ -6,7 +6,7 @@ import org.junit.runner.RunWith;
 
 import java.util.logging.Level;
 
-import io.android.AppiumManager;
+import io.android.AndroidManager;
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import utils.LocProperties;
@@ -24,8 +24,8 @@ public class RunCucumberTest {
 
     @AfterClass
     public static void afterclass() {
-        AppiumManager.getManager().getDriver().removeApp(LocProperties.getProperties().getProperty("appPackage"));
-        AppiumManager.getManager().getDriver().quit();
+        AndroidManager.getDriver().removeApp(LocProperties.getProperties().getProperty("appPackage"));
+        AndroidManager.getDriver().quit();
         Log.log(Level.FINE, "END EXECUTION\n");
     }
 }
