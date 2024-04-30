@@ -39,30 +39,19 @@ If everything goes fine, you'll see everything green!
 
 <font color='green'>
 
+    Scenario Outline: Done unlocked # io/cucumber/features.feature:12
       Given I open the app          # io.cucumber.StepDefinitions.I_open_the_app()
       When I click on Headlines     # io.cucumber.StepDefinitions.I_click_on(java.lang.String)
       Then Done button is unlocked  # io.cucumber.StepDefinitions.done_unlocked()
 
-
-    Scenario Outline: Done unlocked # io/cucumber/features.feature:13
-      Given I open the app          # io.cucumber.StepDefinitions.I_open_the_app()
-      When I click on UI            # io.cucumber.StepDefinitions.I_click_on(java.lang.String)
-      Then Done button is unlocked  # io.cucumber.StepDefinitions.done_unlocked()
-
-
-    Scenario Outline: Done unlocked # io/cucumber/features.feature:14
-      Given I open the app          # io.cucumber.StepDefinitions.I_open_the_app()
-      When I click on Compose       # io.cucumber.StepDefinitions.I_click_on(java.lang.String)
-      Then Done button is unlocked  # io.cucumber.StepDefinitions.done_unlocked()
-
-
-    Scenario: Settings displayed        # io/cucumber/features.feature:18
+    Scenario: Settings displayed        # io/cucumber/features.feature:16
       Given I open the app              # io.cucumber.StepDefinitions.I_open_the_app()
       When I open Settings              # io.cucumber.StepDefinitions.I_click_on_settings()
       Then I see the following sections # io.cucumber.StepDefinitions.sections_in_settings(io.cucumber.datatable.DataTable)
         | Theme                |
+        | Use Dynamic Color    |
         | Dark mode preference |
-        
+
     ┌───────────────────────────────────────────────────────────────────────────────────┐
     │ Share your Cucumber Report with your team at https://reports.cucumber.io          │
     │ Activate publishing with one of the following:                                    │
@@ -79,6 +68,7 @@ If everything goes fine, you'll see everything green!
     │ src/test/resources/cucumber.properties:          cucumber.publish.quiet=true      │
     │ src/test/resources/junit-platform.properties:    cucumber.publish.quiet=true      │
     └───────────────────────────────────────────────────────────────────────────────────┘
+
    
 </font>
 
