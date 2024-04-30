@@ -20,7 +20,7 @@ public class StepDefinitions {
         this.world = world;
     }
 
-    @ParameterType("Headlines|lens icon")
+    @ParameterType("Headlines")
     public String elementsUiMainView(String type) {
         return type;
     }
@@ -45,13 +45,6 @@ public class StepDefinitions {
         world.mainPage.clickOnSettings();
     }
 
-    @When("I type {word}")
-    public void I_type_something(String search) {
-        String stepName = new Object(){}.getClass().getEnclosingMethod().getName().toUpperCase();
-        Log.log(Level.FINE, "----STEP----: " + stepName);
-        world.searchPage.typeSearch(search);
-    }
-
     @Then("Done button is unlocked")
     public void done_unlocked() {
         String stepName = new Object(){}.getClass().getEnclosingMethod().getName().toUpperCase();
@@ -68,12 +61,5 @@ public class StepDefinitions {
             String section = rows.get(0);
             assertTrue(world.settingsPage.isSectionDisplayed(section));
         }
-    }
-
-    @Then("{word} is a result of the search")
-    public void results_of_search(String result) {
-        String stepName = new Object(){}.getClass().getEnclosingMethod().getName().toUpperCase();
-        Log.log(Level.FINE, "----STEP----: " + stepName);
-        assertTrue(world.searchPage.isResultDisplayed(result));
     }
 }

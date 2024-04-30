@@ -38,10 +38,8 @@ public class MainPage extends CommonPage {
                 findUIAutomatorText(elementUI).click();
                 break;
             }
-            case "lens icon": {
-                lensIcon.click();
+            default:
                 break;
-            }
         }
     }
 

@@ -11,6 +11,7 @@ project.ext {
     slf4japiVersion = '1.7.7'
     junitVersion = '4.13.1'
     assertjcoreVersion = '3.8.0'
+    slf4jVersion = '2.0.7'
 }
 
 buildscript {
@@ -29,6 +30,7 @@ dependencies {
     testImplementation 'org.apache.commons:commons-exec:' + apacheCommonsExecVersion
     testImplementation 'org.apache.commons:commons-lang3:' + apacheCommonsLangVersion
 
+    implementation 'org.slf4j:slf4j-nop:' + slf4jVersion
     implementation 'io.appium:java-client:' + javaClientVersion
     implementation 'org.apache.commons:commons-text:' + apacheCommonsTextVersion
     implementation 'commons-codec:commons-codec:' + apacheCommonsCodec

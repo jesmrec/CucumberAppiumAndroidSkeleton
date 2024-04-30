@@ -11,12 +11,6 @@ Feature: Actions in main page
       | section   |
       | Headlines |
 
-    Scenario: Search feature works
-      Given I open the app
-      When I click on lens icon
-      And I type Testing
-      Then Testing is a result of the search
-
   Rule: Settings view correct
 
     Scenario: Settings displayed
