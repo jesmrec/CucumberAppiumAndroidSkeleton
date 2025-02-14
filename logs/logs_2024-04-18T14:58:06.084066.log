@@ -1,0 +1,40 @@
+[2024-04-18 14:58:06] [FINE   ] START EXECUTION
+ 
+[2024-04-18 14:58:07] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2024-04-18 14:58:29] [FINE   ] Device: Google sdk_gphone64_x86_64 
+[2024-04-18 14:58:29] [FINE   ] Platform: ANDROID 12 
+[2024-04-18 14:58:29] [FINE   ] API Level: 31
+ 
+[2024-04-18 14:58:30] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-04-18 14:58:30] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-04-18 14:58:30] [FINE   ] Start: Click on section: Headlines 
+[2024-04-18 14:58:31] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2024-04-18 14:58:34] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2024-04-18 14:58:34] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2024-04-18 14:58:34] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-04-18 14:58:34] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-04-18 14:58:34] [FINE   ] Start: Click on section: UI 
+[2024-04-18 14:58:43] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2024-04-18 14:58:46] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2024-04-18 14:58:46] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2024-04-18 14:58:46] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-04-18 14:58:46] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-04-18 14:58:46] [FINE   ] Start: Click on section: Compose 
+[2024-04-18 14:58:55] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2024-04-18 14:58:58] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2024-04-18 14:58:58] [FINE   ] START SCENARIO EXECUTION: Settings displayed 
+[2024-04-18 14:58:58] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-04-18 14:58:58] [FINE   ] ----STEP----: I_CLICK_ON_SETTINGS 
+[2024-04-18 14:58:58] [FINE   ] Start: Click on Settings 
+[2024-04-18 14:59:09] [FINE   ] ----STEP----: SECTIONS_IN_SETTINGS 
+[2024-04-18 14:59:13] [FINE   ] END SCENARIO EXECUTION: Settings displayed
+
+ 
+[2024-04-18 14:59:15] [FINE   ] END EXECUTION
+ 

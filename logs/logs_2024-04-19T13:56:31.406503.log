@@ -1,0 +1,33 @@
+[2024-04-19 13:56:31] [FINE   ] START EXECUTION
+ 
+[2024-04-19 13:56:32] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2024-04-19 13:56:58] [FINE   ] Device: Google sdk_gphone64_x86_64 
+[2024-04-19 13:56:58] [FINE   ] Platform: ANDROID 12 
+[2024-04-19 13:56:58] [FINE   ] API Level: 31
+ 
+[2024-04-19 13:57:00] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-04-19 13:57:00] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-04-19 13:57:00] [FINE   ] Start: Click on section: Headlines 
+[2024-04-19 13:57:02] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2024-04-19 13:57:05] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2024-04-19 13:57:05] [FINE   ] START SCENARIO EXECUTION: Search feature works 
+[2024-04-19 13:57:06] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-04-19 13:57:06] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-04-19 13:57:06] [FINE   ] Start: Click on section: lens icon 
+[2024-04-19 13:57:10] [FINE   ] ----STEP----: I_TYPE_SOMETHING 
+[2024-04-19 13:57:10] [FINE   ] Start: Search: Testing 
+[2024-04-19 13:57:19] [FINE   ] END SCENARIO EXECUTION: Search feature works
+
+ 
+[2024-04-19 13:57:19] [FINE   ] START SCENARIO EXECUTION: Settings displayed 
+[2024-04-19 13:57:20] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-04-19 13:57:20] [FINE   ] ----STEP----: I_CLICK_ON_SETTINGS 
+[2024-04-19 13:57:20] [FINE   ] Start: Click on Settings 
+[2024-04-19 13:57:26] [FINE   ] ----STEP----: SECTIONS_IN_SETTINGS 
+[2024-04-19 13:57:28] [FINE   ] END SCENARIO EXECUTION: Settings displayed
+
+ 
+[2024-04-19 13:57:32] [FINE   ] END EXECUTION
+ 

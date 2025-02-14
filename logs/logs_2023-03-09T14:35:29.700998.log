@@ -1,0 +1,11 @@
+[2023-03-09 14:35:29] [FINE   ] START EXECUTION
+ 
+[2023-03-09 14:35:30] [FINE   ] Appium driver located in: http://127.0.0.1:4723/wd/hub 
+[2023-03-09 14:35:40] [FINE   ] Device: Google Android SDK built for x86 
+[2023-03-09 14:35:40] [FINE   ] Platform: Android 10 
+[2023-03-09 14:35:40] [FINE   ] API Level: 29
+ 
+[2023-03-09 14:35:40] [FINE   ] Device UDID: null 
+[2023-03-09 14:35:40] [FINE   ] Start: Click on section: Headlines 
+[2023-03-09 14:35:45] [FINE   ] END EXECUTION
+ 

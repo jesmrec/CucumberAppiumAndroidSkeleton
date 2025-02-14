@@ -1,0 +1,40 @@
+[2023-08-01 18:18:03] [FINE   ] START EXECUTION
+ 
+[2023-08-01 18:18:04] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2023-08-01 18:18:29] [FINE   ] Device: unknown Android SDK built for x86 
+[2023-08-01 18:18:29] [FINE   ] Platform: Android 11 
+[2023-08-01 18:18:29] [FINE   ] API Level: 30
+ 
+[2023-08-01 18:18:33] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-08-01 18:18:33] [FINE   ] ----STEP----: I_CLICK_ON 
+[2023-08-01 18:18:33] [FINE   ] Start: Click on section: Headlines 
+[2023-08-01 18:18:36] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2023-08-01 18:18:37] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2023-08-01 18:18:37] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2023-08-01 18:18:40] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-08-01 18:18:40] [FINE   ] ----STEP----: I_CLICK_ON 
+[2023-08-01 18:18:40] [FINE   ] Start: Click on section: UI 
+[2023-08-01 18:18:42] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2023-08-01 18:18:44] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2023-08-01 18:18:44] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2023-08-01 18:18:46] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-08-01 18:18:46] [FINE   ] ----STEP----: I_CLICK_ON 
+[2023-08-01 18:18:46] [FINE   ] Start: Click on section: Compose 
+[2023-08-01 18:18:48] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2023-08-01 18:18:48] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2023-08-01 18:18:48] [FINE   ] START SCENARIO EXECUTION: Settings displayed 
+[2023-08-01 18:18:51] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-08-01 18:18:51] [FINE   ] ----STEP----: I_CLICK_ON_SETTINGS 
+[2023-08-01 18:18:51] [FINE   ] Start: Click on Settings 
+[2023-08-01 18:18:53] [FINE   ] ----STEP----: SECTIONS_IN_SETTINGS 
+[2023-08-01 18:18:54] [FINE   ] END SCENARIO EXECUTION: Settings displayed
+
+ 
+[2023-08-01 18:18:55] [FINE   ] END EXECUTION
+ 

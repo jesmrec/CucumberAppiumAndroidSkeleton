@@ -1,0 +1,40 @@
+[2024-01-17 14:14:30] [FINE   ] START EXECUTION
+ 
+[2024-01-17 14:14:31] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2024-01-17 14:14:45] [FINE   ] Device: Google Pixel 2 
+[2024-01-17 14:14:45] [FINE   ] Platform: Android 11 
+[2024-01-17 14:14:45] [FINE   ] API Level: 30
+ 
+[2024-01-17 14:14:46] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-01-17 14:14:46] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-01-17 14:14:46] [FINE   ] Start: Click on section: Headlines 
+[2024-01-17 14:14:48] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2024-01-17 14:14:49] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2024-01-17 14:14:49] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2024-01-17 14:14:50] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-01-17 14:14:50] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-01-17 14:14:50] [FINE   ] Start: Click on section: UI 
+[2024-01-17 14:14:51] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2024-01-17 14:14:52] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2024-01-17 14:14:52] [FINE   ] START SCENARIO EXECUTION: Done unlocked 
+[2024-01-17 14:14:53] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-01-17 14:14:53] [FINE   ] ----STEP----: I_CLICK_ON 
+[2024-01-17 14:14:53] [FINE   ] Start: Click on section: Compose 
+[2024-01-17 14:14:54] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2024-01-17 14:14:55] [FINE   ] END SCENARIO EXECUTION: Done unlocked
+
+ 
+[2024-01-17 14:14:55] [FINE   ] START SCENARIO EXECUTION: Settings displayed 
+[2024-01-17 14:14:56] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2024-01-17 14:14:56] [FINE   ] ----STEP----: I_CLICK_ON_SETTINGS 
+[2024-01-17 14:14:56] [FINE   ] Start: Click on Settings 
+[2024-01-17 14:14:58] [FINE   ] ----STEP----: SECTIONS_IN_SETTINGS 
+[2024-01-17 14:14:59] [FINE   ] END SCENARIO EXECUTION: Settings displayed
+
+ 
+[2024-01-17 14:15:01] [FINE   ] END EXECUTION
+ 

@@ -1,0 +1,23 @@
+[2023-03-10 10:28:51] [FINE   ] START EXECUTION
+ 
+[2023-03-10 10:28:52] [FINE   ] Appium driver located in: http://127.0.0.1:4723/wd/hub 
+[2023-03-10 10:29:05] [FINE   ] Device: Google Android SDK built for x86 
+[2023-03-10 10:29:05] [FINE   ] Platform: Android 10 
+[2023-03-10 10:29:05] [FINE   ] API Level: 29
+ 
+[2023-03-10 10:29:05] [FINE   ] Device UDID: null 
+[2023-03-10 10:29:05] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-03-10 10:29:05] [FINE   ] ----STEP----: I_CLICK_ON 
+[2023-03-10 10:29:05] [FINE   ] Start: Click on section: Headlines 
+[2023-03-10 10:29:07] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2023-03-10 10:29:08] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-03-10 10:29:08] [FINE   ] ----STEP----: I_CLICK_ON 
+[2023-03-10 10:29:08] [FINE   ] Start: Click on section: UI 
+[2023-03-10 10:29:08] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2023-03-10 10:29:09] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-03-10 10:29:09] [FINE   ] ----STEP----: I_CLICK_ON 
+[2023-03-10 10:29:09] [FINE   ] Start: Click on section: Compose 
+[2023-03-10 10:29:10] [FINE   ] ----STEP----: DONE_UNLOCKED 
+[2023-03-10 10:29:10] [FINE   ] ----STEP----: I_OPEN_THE_APP 
+[2023-03-10 10:29:11] [FINE   ] END EXECUTION
+ 
