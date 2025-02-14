@@ -2,7 +2,6 @@ name: Tests
 
 on:
   push:
-  pull_request:
 
 jobs:
   build:
@@ -35,8 +34,19 @@ jobs:
           sudo udevadm control --reload-rules
           sudo udevadm trigger --name-match=kvm
 
+      - name: Install and Run Appium Server
+        run: |
+          chmod +x ./runAppium.sh # install and run appium server in the background
+          ./runAppium.sh
+
       - name: Grant execute permissions to Gradle
         run: chmod +x ./gradlew
 
-      - name: Execute tests
-        run: ./gradlew clean test
+      - name: Run Appium Tests
+        uses: reactivecircus/android-emulator-runner@v2 # install and create the Emulator
+        with:
+          api-level: 31
+          arch: x86_64
+          profile: pixel
+          script: ./gradlew clean test
+
