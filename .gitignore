@@ -4,3 +4,4 @@ target/*
 local.properties
 .idea
 .DS_store
+.gradle
