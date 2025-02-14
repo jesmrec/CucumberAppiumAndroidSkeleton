@@ -1,8 +1,0 @@
-.idea
-*.iml
-
-.gradle
-build
-logs
-target/*
-local.properties
