@@ -1,3 +1,5 @@
+[![Tests](https://github.com/jesmrec/CucumberAppiumAndroidSkeleton/actions/workflows/tests.yml/badge.svg)](https://github.com/jesmrec/CucumberAppiumAndroidSkeleton/actions/workflows/tests.yml)
+
 # Cucumber + Appium + Android testing
 
 This is an example, how to integrate Cucumber and Appium to automate scenarios over an Android device or emulator.
