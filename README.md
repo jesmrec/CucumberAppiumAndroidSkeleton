@@ -10,7 +10,6 @@ Our sample app will be [Now in Android](https://github.com/android/nowinandroid)
 
 
 	git clone https://github.com/jesmrec/CucumberAppiumAndroidSkeleton
-	cd android
 
 
 or [download a zip](https://github.com/jesmrec/CucumberAppiumAndroidSkeleton/archive/refs/heads/main.zip) file.
